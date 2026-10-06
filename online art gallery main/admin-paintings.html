@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Paintings | ArtVista</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ArtVista
+        </div>
+
+        <div class="nav-links">
+
+            <a href="admin-dashboard.html">Dashboard</a>
+
+            <a href="admin-add-painting.html">Add Painting</a>
+
+            <a href="#" onclick="adminLogout()">Logout</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- MANAGE PAINTINGS -->
+
+    <section class="gallery-header">
+
+        <p class="section-label">ARTVISTA ADMIN</p>
+
+        <h1>Manage Paintings</h1>
+
+        <p>
+            View and manage artworks added to the gallery.
+        </p>
+
+    </section>
+
+
+    <section class="painting-gallery" id="adminPaintingList">
+
+    </section>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            ArtVista
+        </div>
+
+        <p>
+            Admin Panel for ArtVista Online Gallery.
+        </p>
+
+        <p class="copyright">
+            © 2026 ArtVista. All rights reserved.
+        </p>
+
+    </footer>
+
+<script>
+    if (localStorage.getItem("adminLoggedIn") !== "true") {
+        window.location.href = "admin-login.html";
+    }
+</script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

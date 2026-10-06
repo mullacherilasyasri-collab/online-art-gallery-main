@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login | ArtVista</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ArtVista
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="signup.html">User Sign Up</a>
+
+            <a href="login.html">User Login</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ADMIN LOGIN -->
+
+    <section class="auth-section">
+
+        <div class="auth-box">
+
+            <p class="section-label">ARTVISTA ADMIN</p>
+
+            <h1>Admin Login</h1>
+
+            <p class="auth-subtitle">
+                Login to manage the ArtVista gallery.
+            </p>
+
+
+            <form onsubmit="adminLogin(event)">
+
+                <label>Admin Username</label>
+
+                <input
+                    type="text"
+                    id="adminUsername"
+                    placeholder="Enter username"
+                    required
+                >
+
+
+                <label>Password</label>
+
+                <input
+                    type="password"
+                    id="adminPassword"
+                    placeholder="Enter password"
+                    required
+                >
+
+
+                <button type="submit">
+                    Login as Admin
+                </button>
+
+            </form>
+
+
+            <p class="auth-footer">
+                ArtVista Administration
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            ArtVista
+        </div>
+
+        <p>
+            An online space for discovering beautiful art.
+        </p>
+
+        <p class="copyright">
+            © 2026 ArtVista. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

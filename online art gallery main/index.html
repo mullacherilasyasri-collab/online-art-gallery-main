@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ArtVista | Online Art Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ArtVista
+        </div>
+
+        <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="#categories">Gallery</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="login.html">Login</a>
+    <a href="admin-login.html">Admin</a>
+</div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="small-title">WELCOME TO ARTVISTA</p>
+
+            <h1>
+                Where Art<br>
+                Meets Emotion.
+            </h1>
+
+            <p class="hero-description">
+                Explore a curated collection of beautiful artworks
+                created by talented artists from different styles
+                and perspectives.
+            </p>
+
+            <button onclick="openGallery()">
+                Explore Collection
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+
+    <section class="introduction">
+
+        <div class="intro-text">
+
+            <p class="section-label">THE GALLERY</p>
+
+            <h2>
+                Discover art that<br>
+                speaks to you.
+            </h2>
+
+        </div>
+
+        <div class="intro-description">
+
+            <p>
+                ArtVista is an online art gallery where you can
+                discover paintings across different categories.
+                From peaceful landscapes to expressive portraits,
+                explore artworks and learn about the artists behind them.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="categories" id="categories">
+
+        <div class="section-heading">
+
+            <p class="section-label">EXPLORE</p>
+
+            <h2>Art Categories</h2>
+
+            <p>
+                Choose a category and enter its gallery.
+            </p>
+
+        </div>
+
+
+        <div class="category-grid">
+
+
+            <!-- NATURE -->
+
+            <div class="category-card"
+                 onclick="openCategory('nature')">
+
+                <div class="category-image nature-image"></div>
+
+                <div class="category-content">
+
+                    <h3>Nature</h3>
+
+                    <p>
+                        Landscapes, mountains, forests,
+                        oceans and the beauty of nature.
+                    </p>
+
+                    <span>Explore Gallery →</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ABSTRACT -->
+
+            <div class="category-card"
+                 onclick="openCategory('abstract')">
+
+                <div class="category-image abstract-image"></div>
+
+                <div class="category-content">
+
+                    <h3>Abstract</h3>
+
+                    <p>
+                        Creative forms, colours and
+                        imaginative artistic expressions.
+                    </p>
+
+                    <span>Explore Gallery →</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- PORTRAIT -->
+
+            <div class="category-card"
+                 onclick="openCategory('portrait')">
+
+                <div class="category-image portrait-image"></div>
+
+                <div class="category-content">
+
+                    <h3>Portrait</h3>
+
+                    <p>
+                        Artistic portraits capturing
+                        people, expressions and emotions.
+                    </p>
+
+                    <span>Explore Gallery →</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- TRADITIONAL -->
+
+            <div class="category-card"
+                 onclick="openCategory('traditional')">
+
+                <div class="category-image traditional-image"></div>
+
+                <div class="category-content">
+
+                    <h3>Traditional</h3>
+
+                    <p>
+                        Cultural artwork inspired by
+                        traditional Indian art forms.
+                    </p>
+
+                    <span>Explore Gallery →</span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            ArtVista
+        </div>
+
+        <p>
+            An online space for discovering beautiful art.
+        </p>
+
+        <p class="copyright">
+            © 2026 ArtVista. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+<section class="admin-gallery-section">
+
+    <div class="gallery-header">
+
+        <p class="section-label">NEW ARTWORKS</p>
+
+        <h1>Recently Added</h1>
+
+        <p>
+            Explore the latest artworks added to ArtVista.
+        </p>
+
+    </div>
+
+    <div id="publicAdminPaintings" class="painting-gallery"></div>
+
+</section>

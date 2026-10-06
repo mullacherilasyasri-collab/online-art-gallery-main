@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | ArtVista</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ArtVista
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="nature.html">Gallery</a>
+
+            <a href="#" onclick="adminLogout()">Logout</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ADMIN DASHBOARD -->
+
+    <section class="dashboard">
+
+        <div class="dashboard-header">
+
+            <p class="section-label">ARTVISTA ADMIN</p>
+
+            <h1>Admin <span>Dashboard</span></h1>
+
+            <p>
+                Manage artworks and maintain the ArtVista gallery.
+            </p>
+
+        </div>
+
+
+        <div class="dashboard-grid">
+
+            <!-- ADD PAINTING -->
+
+            <div class="dashboard-card">
+
+                <h2>Add Painting</h2>
+
+                <p>
+                    Add a new artwork to the ArtVista collection.
+                </p>
+
+                <a href="admin-add-painting.html">
+                    Add New Painting →
+                </a>
+
+            </div>
+
+
+            <!-- MANAGE PAINTINGS -->
+
+            <div class="dashboard-card">
+
+                <h2>Manage Paintings</h2>
+
+                <p>
+                    View and manage artworks available in the gallery.
+                </p>
+
+                <a href="admin-paintings.html">
+                    View Paintings →
+                </a>
+
+            </div>
+
+
+            <!-- GALLERY -->
+
+            <div class="dashboard-card">
+
+                <h2>Gallery</h2>
+
+                <p>
+                    Open the public ArtVista gallery and view collections.
+                </p>
+
+                <a href="index.html#categories">
+                    Open Gallery →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            ArtVista
+        </div>
+
+        <p>
+            Admin Panel for ArtVista Online Gallery.
+        </p>
+
+        <p class="copyright">
+            © 2026 ArtVista. All rights reserved.
+        </p>
+
+    </footer>
+
+<script>
+    if (localStorage.getItem("adminLoggedIn") !== "true") {
+        window.location.href = "admin-login.html";
+    }
+</script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

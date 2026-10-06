@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Painting | ArtVista</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ArtVista
+        </div>
+
+        <div class="nav-links">
+
+            <a href="admin-dashboard.html">Dashboard</a>
+
+            <a href="index.html">Gallery</a>
+
+            <a href="#" onclick="adminLogout()">Logout</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ADD PAINTING -->
+
+    <section class="auth-section">
+
+        <div class="auth-box">
+
+            <p class="section-label">ARTVISTA ADMIN</p>
+
+            <h1>Add Painting</h1>
+
+            <p class="auth-subtitle">
+                Add a new artwork to the gallery collection.
+            </p>
+
+
+            <form onsubmit="addPainting(event)">
+
+                <label>Painting Name</label>
+
+                <input
+                    type="text"
+                    id="paintingName"
+                    placeholder="Enter painting name"
+                    required
+                >
+
+
+                <label>Artist Name</label>
+
+                <input
+                    type="text"
+                    id="paintingArtist"
+                    placeholder="Enter artist name"
+                    required
+                >
+
+
+                <label>Category</label>
+
+                <select id="paintingCategory" required>
+
+                    <option value="">Select Category</option>
+
+                    <option value="NATURE COLLECTION">
+                        Nature
+                    </option>
+
+                    <option value="ABSTRACT COLLECTION">
+                        Abstract
+                    </option>
+
+                    <option value="PORTRAIT COLLECTION">
+                        Portrait
+                    </option>
+
+                    <option value="TRADITIONAL COLLECTION">
+                        Traditional
+                    </option>
+
+                </select>
+
+
+                <label>Price</label>
+
+                <input
+                    type="number"
+                    id="paintingPrice"
+                    placeholder="Enter price"
+                    required
+                >
+
+
+                <label>Image URL</label>
+
+                <input
+                    type="url"
+                    id="paintingImage"
+                    placeholder="Paste image URL"
+                    required
+                >
+
+
+                <label>Description</label>
+
+                <textarea
+                    id="paintingDescription"
+                    placeholder="Enter painting description"
+                    rows="4"
+                    required
+                ></textarea>
+
+
+                <button type="submit">
+                    Add Painting
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            ArtVista
+        </div>
+
+        <p>
+            Admin Panel for ArtVista Online Gallery.
+        </p>
+
+        <p class="copyright">
+            © 2026 ArtVista. All rights reserved.
+        </p>
+
+    </footer>
+
+<script>
+    if (localStorage.getItem("adminLoggedIn") !== "true") {
+        window.location.href = "admin-login.html";
+    }
+</script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
